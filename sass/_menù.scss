@@ -1,0 +1,45 @@
+#userMenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+    z-index: 1000;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+
+#userMenu.show {
+    display: block; 
+}
+
+.carousel-control-prev {
+    justify-content: start!important;
+}
+
+.carousel-control-next {
+   justify-content: end!important;
+}  
+
+.editButtons {
+    color:white
+}
+
+.editButtons:hover {
+    background-color: white;
+    color:black
+}
+
+.bottoniNavMain {
+    width:2rem;
+    &:hover {
+        background-color: grey;
+    }
+}
+
+#menuGeneri {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

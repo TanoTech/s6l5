@@ -1,0 +1,68 @@
+@import "menù";
+@import "loghi";
+@import "bootstrap/bootstrap.scss";
+
+$coloreTestoPrincipale: #ffffff;
+$coloreTestoSecondario: #928a8a;
+
+*{
+    box-sizing: border-box;
+}
+
+header, main, footer {
+    margin-left: 3rem;
+}
+
+h2 {
+    margin-left: 0.4em;
+}
+
+h1 {
+ margin-right: 3rem;
+}
+
+h2, main nav, a{
+    margin-bottom: 0.5em
+}
+
+main section img {
+    margin-right: 0.3rem;
+}
+
+section {
+    margin-bottom: 5em;
+}
+
+@function testoPrincipale($dark-bg) {
+    @if ($dark-bg) {
+        @return $coloreTestoPrincipale;
+    }
+} 
+
+@function testoSecondario($dark-bg) {
+    @if ($dark-bg) {
+        @return $coloreTestoSecondario;
+    }
+} 
+
+body,
+h1,
+h2,
+select {
+    background-color: black;
+    color: testoPrincipale(true);
+}
+
+footer a,
+footer p,
+nav a{
+    color: testoSecondario(true);
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+#netflixBarra {
+    flex: 1 0 80%
+}
